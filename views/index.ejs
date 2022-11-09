@@ -17,9 +17,6 @@
     <a href="/recipes/new">
      <button>Add recipes</button></a>
   </div> <br>
-
-
-  
         <div class="index_container">
           <div class="recipes_row">
             <% recipes.forEach(recipes =>{ %>
@@ -28,6 +25,7 @@
               <img src=<%=recipes.img %>> 
               <div class="recipe_details">
               <h4><%=recipes.name %></a></h4>
+              <p class="recipe_desc"><%=recipes.description %></p>
       </div>
       </div>
       <% }) %>

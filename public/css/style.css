@@ -1,56 +1,27 @@
-/* .topnav {
-    background-color: #b3cde0;
-    overflow: hidden;
-    text-align: center;
-}
-.container {
-  display: flex;
-    border: 3px solid;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-.card {
-    list-style: none;
-   
-    padding: 20px;
-    
-    color: #222;
-    border: 2px solid ;
-    margin: 5px;
-}
-.container .card {
-    width: 320px;
-    overflow: hidden;
-    text-align: center;
-    border: 1px solid ;
-    border-radius: 20px;
-    box-shadow: 0 0 7px;
-}
-.container .card .img {
-    width: 330px;
-    margin: 40px auto;
-}
-
-.container .card .img {
-    width: 100%;
-}
-img {
-    height: 300px;
-    width: 300px;
-} */
-.container{
-  width: 90%;
-  margin: 0 auto;
+* {
+  font-family: 'Lora', serif;
 }
 body{
   overflow-x: hidden;
 }
-* {
-  font-family: 'Lora', serif;
+.index_container{
+  width: 90%;
+  margin: 0 auto;
+}
+.topnav {
+  background-color: #b3cde0;
+  overflow: hidden;
+  text-align: center;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  overflow-x: hidden;
+}
 
 ul {
   list-style: none;
@@ -111,31 +82,34 @@ button:hover {
   cursor: pointer;
 }
 
-
-.recipes_row{
+.recipes_row {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.recipes_row .recipes_item{
+
+.recipes_row .recipes_item {
   width: 30%;
- box-shadow:  0 8px 8px 0 rgba(0,0,0,0.08);
- margin-bottom: 50px;
- border-radius: 10px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 50px;
+  border-radius: 25px;
 }
 
-.recipes_row .recipes_item img{
+.recipes_row .recipes_item img {
   width: 100%;
 }
-.recipes_row .recipes_item .recipe_details{
+
+.recipes_row .recipes_item .recipe_details {
   padding: 1rem;
 }
-.recipes_row .recipes_item .recipe_details .recipe_title{
+
+.recipes_row .recipes_item .recipe_details .recipe_title {
   margin-top: 0px;
   margin-bottom: 5px;
 }
-.recipes_row .recipes_item .recipe_details .recipe_desc{
+
+.recipes_row .recipes_item .recipe_details .recipe_desc {
   margin-bottom: 0px;
   margin-top: 0px;
 }
