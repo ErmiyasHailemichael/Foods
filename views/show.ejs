@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Show</title>
 </head>
@@ -12,32 +13,40 @@
         <a href="/recipes">
             <button>Back</button>
         </a>
-    </nav>
-    <div class="blockname">
-        <h2><%=recipes.name %> </h2>
-    </div>
+    </nav> <br>
+        <h2 class="recipes_name"><%=recipes.name %> </h2>
 
-    <div id="showimg">
-    <img src=<%=recipes.img %>> <br>
-    </div>
-    <%=recipes.description %> <br>
-    <h3>INGREDIENTS</h3>
+   <div class="container">
+    <div class="view-row">
+        <div class="left-col">
+            <h3>INGREDIENTS</h3>
     <ul>
     <% recipes.ingredients.split(",").forEach((ingredient)=>{ %> 
         <li><%= ingredient %> </li>
         <% }) %> 
     </ul>
-    <h3>INSTRUCTIONS</h3>
+    </div>
+    <div class="right-col">
+    
+    <img src=<%=recipes.img %>> <br>
+   <p><%=recipes.description %> <br></p> 
+
+    <h3 class="instructions">INSTRUCTIONS</h3>
     <ol>
         <% recipes.instructions.split(".").forEach((instruction)=>{ %> 
             <li><%= instruction %> </li>
             <% }) %> 
     </ol>
+    
     <form action="/recipes/<%= recipes._id %>?_method=DELETE" method="POST">
-       <br> <button type="submit">Delete</button><br />
+       <br> <button type="submit">Delete</button>
     </form>
     
       <a href="/recipes/<%= recipes._id %>/edit ">
       <br>  <button>Edit</button></a>
+    
+    </div>
+</div>
+</div>
 </body>
 </html>

@@ -4,6 +4,9 @@
 body{
   overflow-x: hidden;
 }
+ /* h1, h2, h3 , h4{
+  color: rgb(65, 205, 140);
+ } */
 .index_container{
   width: 90%;
   margin: 0 auto;
@@ -112,4 +115,54 @@ button:hover {
 .recipes_row .recipes_item .recipe_details .recipe_desc {
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+/* VIEW PAGE CSS  */
+.recipes_name{
+  /* display: flex; */
+  text-align: center;
+  color:rgb(65, 205, 140) ;
+}
+.view-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.view-row .left-col{
+  width: 35%;
+}
+.view-row .left-col ul{
+  padding-left: 10;
+}
+.view-row .left-col ul li{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.view-row .left-col ul li:before{
+  margin-right: 0.5rem;
+}
+.view-row .right-col ol li{
+  margin-bottom: 10px;
+}
+.view-row .right-col{
+  width: 60%;
+}
+.view-row .right-col img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* MOBILE RESPONSIVE  */
+@media (max-width: 768px) {
+  .recipes_row .recipes_item{
+    width: 100%;
+  }
+  .view-row .left-col{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .view-row .right-col{
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
