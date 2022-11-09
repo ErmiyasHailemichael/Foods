@@ -151,7 +151,13 @@ button:hover {
   width: 100%;
   border-radius: 15px;
 }
-
+fieldset{
+  color: #000000;
+  background-color: #4E6C50;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 30px 70px;
+}
 /* MOBILE RESPONSIVE  */
 @media (max-width: 768px) {
   .recipes_row .recipes_item{

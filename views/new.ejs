@@ -12,16 +12,25 @@
     <nav>
       <a href="/recipes"> <button>Back</button></a>
     </nav>
-    <h1>NEW | Add New Item</h1>
+    <fieldset>
+    <legend>NEW | Add New Item</legend>
     <form action="/recipes" method="POST">
-      name: <input type="text" name="name" /> <br />
-      description: <input type="text" name="description" /> <br />
-      img: <input type="url" name="img" /> <br />
-      ingredients: <input type="tex" name="ingredients" /> <br />
+      Name: 
+      <br>
+      <input type="text" name="name" placeholder="Name of Food" /> <br />
+      Description: 
+      <br>
+      <input type="text" name="description" placeholder="Description of Food" /> <br />
+      Img: <br>
+      <input type="url" name="img" placeholder="Image of Food" /> <br />
+      Ingredients:<br>
+       <input type="tex" name="ingredients" placeholder="Name of Ingredients" /> <br />
       <!-- instructions: <input type="text" name="instructions"> <br/> -->
-      instructions: <br />
-      <textarea name="instructions" id="" cols="30" rows="10"></textarea> <br />
-      <input type="submit" value="add recipe" />
+      Instructions: <br />
+      <textarea name="instructions" id="" cols="30" rows="10" placeholder="Instruction for preparation" ></textarea> <br />
+      <!-- <input type="submit" value="add recipe" /> -->
+    </fieldset> <br>
+      <button type="submit">Add Recipe</button>
     </form>
   </body>
 </html>
