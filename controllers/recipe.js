@@ -32,6 +32,7 @@ recipesRouter.get("/", (req, res) => {
   
   // UPDATE
   recipesRouter.put('/:id', (req, res)=>{
+    console.log('test')
       // console.log(req.body)
       Recipes.findByIdAndUpdate(
           req.params.id, 

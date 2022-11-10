@@ -20,24 +20,27 @@
     </div>
     <!-- <a href="/recipes"> <button>Back</button></a> -->
 
-    <h1>Edit Recipe</h1>
-
-    <form action="/recipes/<%= recipes._id %>?_method=PUT" method="post">
-      Name: <br>
+    <h1 class="edittitle">Edit Recipe</h1>
+    <div class="containeredit">
+    <div class="showcard">
+    <form action="/recipes/<%=recipes._id %>?_method=PUT" method="POST">
+      name: <br>
       <input type="text" name="name" value="<%=recipes.name%>" /><br />
-      Description: <br>
+      description: <br>
       <input type="text" name="description" value="<%=recipes.description%>" /><br />
-      Img:<br>
+      img:<br>
        <input type="url" name="img" value="<%= recipes.img %> "> <br />
       
        <textarea name="instructions" id="" cols="30" rows="5" placeholder="Instruction for preparation" 
         valu="<%= recipes.ingredients %>"></textarea> <br />
        
-       Instructions: <br />
+       instructions: <br />
         <textarea name="instructions" id="" cols="30" rows="5" placeholder="Instruction for preparation" 
         valu="<%= recipes.instructions %>"></textarea> <br />
-     <button>Submit changes</button>
+        <button>Submit changes</button>
 
     </form>
+    </div>
+</div>
 </body>
 </html>
