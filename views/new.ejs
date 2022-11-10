@@ -9,9 +9,16 @@
     <title>New</title>
   </head>
   <body>
-    <nav>
-      <a href="/recipes"> <button>Back</button></a>
-    </nav>
+    <div class="topnav">
+      <nav class="navMenu">
+         <a href="/recipes"> <button>Home</button></a>
+         <a href="/recipes"><button>Recipes</button></a>
+         <!-- <a href="#">About</a> -->
+         <a href="/recipes"><button>Back</button></a>
+         <!-- <a href="/recipes/new">
+           <button>Add recipes</button></a><br> -->
+       </nav>
+   </div> <br>
     <fieldset>
     <legend>NEW | Add New Item</legend>
     <form action="/recipes" method="POST">
@@ -23,11 +30,13 @@
       <input type="text" name="description" placeholder="Description of Food" /> <br />
       Img: <br>
       <input type="url" name="img" placeholder="Image of Food" /> <br />
-      Ingredients:<br>
-       <input type="tex" name="ingredients" placeholder="Name of Ingredients" /> <br />
+      <!-- Ingredients:<br>
+       <input type="tex" name="ingredients" placeholder="Name of Ingredients" /> <br /> -->
+       Ingredients:<br>
+      <textarea name="ingredients" id="" cols="30" rows="5" placeholder="Instruction for preparation" ></textarea> <br />
       <!-- instructions: <input type="text" name="instructions"> <br/> -->
       Instructions: <br />
-      <textarea name="instructions" id="" cols="30" rows="10" placeholder="Instruction for preparation" ></textarea> <br />
+      <textarea name="instructions" id="" cols="30" rows="5" placeholder="Instruction for preparation" ></textarea> <br />
       <!-- <input type="submit" value="add recipe" /> -->
     </fieldset> <br>
       <button type="submit">Add Recipe</button>

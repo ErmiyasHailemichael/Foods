@@ -13,11 +13,16 @@
 </head>
 <body>
   <div class="topnav">
-    
-    <a href="/recipes/new">
-     <button>Add recipes</button></a><br>
-     <h1>Lists of Recipes</h1> <br>
+     <nav class="navMenu">
+        <a href="/recipes"> <button>Home</button></a>
+        <a href="/recipes"><button>Recipes</button></a>
+        <!-- <a href="#">About</a> -->
+        <!-- <a href="/recipes"><button>Back</button></a> -->
+        <a href="/recipes/new">
+          <button>Add recipes</button></a><br>
+      </nav>
   </div> <br>
+  <h1 class="indextitle">Lists of Recipes</h1> <br>
         <div class="index_container">
           <div class="recipes_row">
             <% recipes.forEach(recipes =>{ %>

@@ -12,7 +12,7 @@ body{
   margin: 0 auto;
 }
 .topnav {
-  background-color: #b3cde0;
+  background-color: #6D9886;
   overflow: hidden;
   text-align: center;
 }
@@ -91,7 +91,10 @@ button:hover {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
+.indextitle{
+  text-align: center;
+  color:rgb(65, 205, 140) ;
+}
 .recipes_row .recipes_item {
   width: 30%;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.08);
@@ -151,13 +154,51 @@ button:hover {
   width: 100%;
   border-radius: 15px;
 }
+/* ADD RECIPE CSS */
 fieldset{
   color: #000000;
-  background-color: #4E6C50;
+  /* background-image: url(../img/nordwood-themes-pYWrdKO5ksI-unsplash.jpg); */
+  background-color: #256D85;
   border: 1px solid black;
   border-radius: 8px;
   padding: 30px 70px;
 }
+
+/* EDIT RECIPE CSS */
+
+.navMenu {
+  display: inline;
+  position:static;
+  top: 50%;
+  left: 50%;
+}
+.navMenu a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  width: 80px;
+  
+}
+
+.navMenu a:hover {
+  color:black;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  /* background: rgb(65, 205, 140); */
+  border-radius: 40%;
+  opacity: 0;
+  /* -webkit-transform: translateX(30px); */
+  /* transform: translateX(30px); */
+  /* -webkit-transition: all 0.2s ease-in-out; */
+  transition: all 0.2s ease-in-out;
+}
+
+
+
 /* MOBILE RESPONSIVE  */
 @media (max-width: 768px) {
   .recipes_row .recipes_item{
