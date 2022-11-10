@@ -10,11 +10,15 @@ This web app is a full CRUD app which can create, read update and delete. Ypu ca
 ![](public/img/Recipes.png)
 
 ## Screenshot(s)
-## index- in this page you will see the list of recipe
+
+## index 
+- in this page you will see the list of recipe
 ![](public/img/index.png)
 
-## show- in this page you will see the detail of the recipe that includes the ingridents, instructions, and edit and delete button
+## show
+- in this page you will see the detail of the recipe that includes the ingridents, instructions, and edit and delete button
 ![](public/img/show.png)
+
 ## Technologies Used:
 - HTML
 - CSS
