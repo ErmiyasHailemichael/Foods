@@ -24,19 +24,17 @@
     <div class="containeredit">
     <div class="showcard">
     <form action="/recipes/<%=recipes._id %>?_method=PUT" method="POST">
-      name: <br>
-      <input type="text" name="name" value="<%=recipes.name%>" /><br />
-      description: <br>
-      <input type="text" name="description" value="<%=recipes.description%>" /><br />
-      img:<br>
+    Name: <br>
+    <input type="text" name="name" value="<%=recipes.name%>" /><br />
+      Description <br>
+       <input type="text" name="description" value="<%=recipes.description%>" /><br />
+      Img: <br>
        <input type="url" name="img" value="<%= recipes.img %> "> <br />
+      Ingredients: <br>
+       <input type="text" name="ingredients" value="<%= recipes.ingredients %>"> <br/>
+      Instructions: <br>
+      <input type="text" name="instructions" value="<%= recipes.instructions %>"> <br/>
       
-       <textarea name="instructions" id="" cols="30" rows="5" placeholder="Instruction for preparation" 
-        valu="<%= recipes.ingredients %>"></textarea> <br />
-       
-       instructions: <br />
-        <textarea name="instructions" id="" cols="30" rows="5" placeholder="Instruction for preparation" 
-        valu="<%= recipes.instructions %>"></textarea> <br />
         <button>Submit changes</button>
 
     </form>

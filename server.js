@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
 
-const recipesController = require('./controllers/recipe')
+const recipesController = require("./controllers/recipe");
 
 require("dotenv").config();
 
@@ -24,8 +24,10 @@ db.on("disconnected", () => console.log("mongo disconnected"));
 // MIDDLEWARE
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
-app.use('/recipes', recipesController)
-app.use(express.static('public'))
-
+app.use("/recipes", recipesController);
+app.use(express.static("public"));
+app.get("/", (req, res) => {
+  res.redirect("/recipes");
+});
 
 app.listen(PORT, () => console.log(`Server is live on port :${PORT}`));
