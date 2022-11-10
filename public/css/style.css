@@ -191,9 +191,6 @@ fieldset{
   /* background: rgb(65, 205, 140); */
   border-radius: 40%;
   opacity: 0;
-  /* -webkit-transform: translateX(30px); */
-  /* transform: translateX(30px); */
-  /* -webkit-transition: all 0.2s ease-in-out; */
   transition: all 0.2s ease-in-out;
 }
 
@@ -205,7 +202,7 @@ margin-bottom: 10px;
   padding: 0;
 color: #00092C;
 font-size: 20px;
-/* text-shadow: 1px 1px 1px #fff; */
+
 }
 .showcard{
   padding: 70px;
